@@ -39,15 +39,40 @@ public class Respuesta {
     por lo que no es necesario definir estros atributos en esta tabla(automaticamente se crean.
     */
 
-    /*
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_usuario") //se crea un campo id_usuario en esta tabla Respuesta la cual unira "tendra relacion con la tabla usuarios.
-    private Usuario usuario;
-     */
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="id_topico")
+    @JoinColumn(name = "usuario_id") //se crea un campo id_usuario en esta tabla Respuesta la cual unira "tendra relacion con la tabla usuarios.
+    private Usuario usuario;
+
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="topico_id")
     private Topico topico;
+
+    public Respuesta(CrearRespuestaDTO crearRespuestaDTO, Usuario usuario, Topico topico) {
+        this.mensaje = crearRespuestaDTO.mensaje();
+        this.fechaCreacion = LocalDateTime.now();
+        this.ultimaActualizacion = LocalDateTime.now();
+        this.solucion = false;
+        this.borrado = false;
+        this.usuario = usuario;
+        this.topico = topico;
+    }
+
+   public void actualizarRespuesta(ActualizarRespuestaDTO actualizarRespuestaDTO){
+        if(actualizarRespuestaDTO.mensaje() != null){
+            this.mensaje = actualizarRespuestaDTO.mensaje();
+        }
+        if (actualizarRespuestaDTO.solucion() != null){
+            this.solucion = actualizarRespuestaDTO.solucion();
+        }
+        this.ultimaActualizacion = LocalDateTime.now();
+   }
+
+   public void eliminarRespuesta(){
+        this.borrado = true;
+   }
+
 
 }
 
