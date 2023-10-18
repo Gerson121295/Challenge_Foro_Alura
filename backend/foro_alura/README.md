@@ -1,6 +1,6 @@
 
 <div align="center">
-   <h1>Challenge ONE | Java | Back End - SpringBoot | API - Foro Alura</h1>
+   <h1>Challenge ONE | Java | Back End - SpringBoot | API REST - Foro Alura</h1>
 </div>
 
 
@@ -78,7 +78,7 @@ Eliminar un tópico.</p>
   * ![foroAluraBD.jpg](src/main/resources/img-readme/foroAluraBD.jpg)
     
 ### Video del funcionamiento de la aplicacion
-[![video-demos](https://img.youtube.com/vi/3ivkN_BYxM8.jpg)](https://www.youtube.com/watch?v=3ivkN_BYxM8)
+[![video-muestra-func](https://img.youtube.com/vi/3ivkN_BYxM8/0.jpg)](https://www.youtube.com/watch?v=3ivkN_BYxM8)
 
 # 📖 Acceso al proyecto
 ### ¿Cómo descargar?
@@ -125,11 +125,6 @@ Listo
 ## Autores
 [<img src="https://avatars.githubusercontent.com/u/79103450?v=4" width=115><br><sub>Gerson Escobedo</sub>](https://github.com/gerson121295)
 
-# Licencia
-![GitHub](https://img.shields.io/github/license/dropbox/dropbox-sdk-java)
-  
-License: [MIT](License.txt)
-
 ## Gracias
 
 💙 Alura Latam
@@ -139,6 +134,13 @@ License: [MIT](License.txt)
 🧡 Oracle
 
 [![img](https://camo.githubusercontent.com/c00f87aeebbec37f3ee0857cc4c20b21fefde8a96caf4744383ebfe44a47fe3f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4c696e6b6564496e2d2532333030373742353f7374796c653d666f722d7468652d6261646765266c6f676f3d6c696e6b6564696e266c6f676f436f6c6f723d7768697465)](https://www.linkedin.com/company/oracle/)
+
+# Licencia
+![GitHub](https://img.shields.io/github/license/dropbox/dropbox-sdk-java)
+  
+License: [MIT](License.txt)
+
+
 
 
 
